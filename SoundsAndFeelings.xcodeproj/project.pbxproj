@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		FB759E6F282AC4F000DF174E /* SoundsAndFeelingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E6E282AC4F000DF174E /* SoundsAndFeelingsApp.swift */; };
-		FB759E71282AC4F000DF174E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E70282AC4F000DF174E /* ContentView.swift */; };
 		FB759E73282AC4F100DF174E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB759E72282AC4F100DF174E /* Assets.xcassets */; };
 		FB759E76282AC4F100DF174E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB759E75282AC4F100DF174E /* Preview Assets.xcassets */; };
+		FB759E7D282AC50000DF174E /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E7C282AC50000DF174E /* Synth.swift */; };
+		FB759E7F282AC53600DF174E /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E7E282AC53600DF174E /* Sound.swift */; };
+		FB759E81282AC57D00DF174E /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E80282AC57D00DF174E /* Wave.swift */; };
+		FB759E87282AC6AF00DF174E /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E86282AC6AF00DF174E /* WaveView.swift */; };
+		FB759E8A282AC73600DF174E /* SliderWaveControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E89282AC73600DF174E /* SliderWaveControl.swift */; };
+		FB759E8D282AC77300DF174E /* SliderInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E8C282AC77300DF174E /* SliderInterface.swift */; };
+		FB759E8F282AC80400DF174E /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB759E8E282AC80400DF174E /* PlayButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB759E6B282AC4F000DF174E /* SoundsAndFeelings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundsAndFeelings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB759E6E282AC4F000DF174E /* SoundsAndFeelingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsAndFeelingsApp.swift; sourceTree = "<group>"; };
-		FB759E70282AC4F000DF174E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB759E72282AC4F100DF174E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB759E75282AC4F100DF174E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB759E7C282AC50000DF174E /* Synth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
+		FB759E7E282AC53600DF174E /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		FB759E80282AC57D00DF174E /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		FB759E86282AC6AF00DF174E /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		FB759E89282AC73600DF174E /* SliderWaveControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderWaveControl.swift; sourceTree = "<group>"; };
+		FB759E8C282AC77300DF174E /* SliderInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderInterface.swift; sourceTree = "<group>"; };
+		FB759E8E282AC80400DF174E /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				FB759E6E282AC4F000DF174E /* SoundsAndFeelingsApp.swift */,
-				FB759E70282AC4F000DF174E /* ContentView.swift */,
+				FB759E83282AC5DB00DF174E /* SoundGeneration */,
+				FB759E84282AC62900DF174E /* Views */,
+				FB759E82282AC5BD00DF174E /* Model */,
 				FB759E72282AC4F100DF174E /* Assets.xcassets */,
 				FB759E74282AC4F100DF174E /* Preview Content */,
 			);
@@ -65,6 +79,50 @@
 				FB759E75282AC4F100DF174E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB759E82282AC5BD00DF174E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB759E7E282AC53600DF174E /* Sound.swift */,
+				FB759E80282AC57D00DF174E /* Wave.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB759E83282AC5DB00DF174E /* SoundGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				FB759E7C282AC50000DF174E /* Synth.swift */,
+				FB759E8E282AC80400DF174E /* PlayButton.swift */,
+			);
+			path = SoundGeneration;
+			sourceTree = "<group>";
+		};
+		FB759E84282AC62900DF174E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB759E86282AC6AF00DF174E /* WaveView.swift */,
+				FB759E88282AC71A00DF174E /* WaveControls */,
+				FB759E8B282AC76600DF174E /* Interfaces */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB759E88282AC71A00DF174E /* WaveControls */ = {
+			isa = PBXGroup;
+			children = (
+				FB759E89282AC73600DF174E /* SliderWaveControl.swift */,
+			);
+			path = WaveControls;
+			sourceTree = "<group>";
+		};
+		FB759E8B282AC76600DF174E /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FB759E8C282AC77300DF174E /* SliderInterface.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB759E71282AC4F000DF174E /* ContentView.swift in Sources */,
+				FB759E7D282AC50000DF174E /* Synth.swift in Sources */,
+				FB759E87282AC6AF00DF174E /* WaveView.swift in Sources */,
+				FB759E81282AC57D00DF174E /* Wave.swift in Sources */,
+				FB759E8D282AC77300DF174E /* SliderInterface.swift in Sources */,
+				FB759E8A282AC73600DF174E /* SliderWaveControl.swift in Sources */,
+				FB759E8F282AC80400DF174E /* PlayButton.swift in Sources */,
 				FB759E6F282AC4F000DF174E /* SoundsAndFeelingsApp.swift in Sources */,
+				FB759E7F282AC53600DF174E /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
